@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Flashcards | Study Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <h1>JS Concept Master</h1>
+        
+        <!-- Progress Section -->
+        <div class="progress-container">
+            <div class="progress-bar">
+                <div id="progress-fill" class="progress-fill"></div>
+            </div>
+            <p id="progress-text">Card 1 of 5</p>
+        </div>
+
+        <!-- Flashcard Component -->
+        <div class="card-wrapper">
+            <div id="flashcard" class="card">
+                <div class="card-face card-front">
+                    <p id="question-text">Question goes here?</p>
+                </div>
+                <div class="card-face card-back">
+                    <p id="answer-text">Answer goes here.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Controls -->
+        <div class="controls">
+            <button id="prev-btn" class="nav-btn">Previous</button>
+            <button id="flip-btn" class="action-btn">Flip Card</button>
+            <button id="next-btn" class="nav-btn">Next</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
